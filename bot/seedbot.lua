@@ -203,11 +203,11 @@ end
 function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
-    enabled_plugins = {
+   enabled_plugins = {
     "onservice",
     "inrealm",
-    "ingroup",
-    "inpm",
+    "Moderator_Gp",
+    "LockTag",
     "banhammer",
     "stats",
     "anti_spam",
@@ -216,34 +216,15 @@ function create_config( )
     "set",
     "get",
     "broadcast",
-    "download_media",
-    "invite",
-    "all",
-    "leave_ban"
+    "plugins",
+    "lock_link",
+    "all"
     },
-    sudo_users = {110626080,103649648,111020322,0,tonumber(our_id)},--Sudo users
+    sudo_users = {164059631},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Teleseed v2 - Open Source
-An advance Administration bot based on yagop/telegram-bot 
-
-https://github.com/SEEDTEAM/TeleSeed
-
-Admins
-@iwals [Founder]
-@imandaneshi [Developer]
-@Rondoozle [Developer]
-@seyedan25 [Manager]
-
-Special thanks to
-awkward_potato
-Siyanew
-topkecleon
-Vamptacus
-
-Our channels
-@teleseedch [English]
-@iranseed [persian]
+    about_text = [[pokerface
+    a new bot with best idea
 ]],
     help_text_realm = [[
 Realm Commands:
